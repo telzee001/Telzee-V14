@@ -3,20 +3,24 @@
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "dry_run": false,
-    "exchange": {
+        "exchange": {
         "name": "binance",
-        "key": "K4IGM01KrKHuTsJJcgUDJmflKnwOHOU8ml0G6P9ongxwUg3hDlZQ7xaT23T6J1QK",
-        "secret": "51SsM6BPVxItBU4DGNF3PtQy2sY5Wotetvz3dcgGSzFmZzMG8mM6pDb0na0DIUa7",
+        "key": "K4IGM01KrKHuTsJJcgUDJmflKnwOHOU8mlOG6P9ongxwUg3hDlZQ7xaT23T6J1QK",
+        "secret": "51SsM6BPVxltBU4DGNF3PtQy2sY5Wotetvz3dcgSzFmZzMG8mM6pDb0na0DIUa7",
         "ccxt_config": {
-            "options": {
-                "defaultType": "future",
-                "sandboxMode": true
+            "urls": {
+                "api": {
+                    "public": "https://testnet.binancefuture.com/fapi/v1",
+                    "private": "https://testnet.binancefuture.com/fapi/v1"
+                }
             },
-            "proxies": {
-                "http": "http://185.162.229.154:10002",
-                "https": "http://185.162.229.154:10002"
-            }
+            "options": {"defaultType": "future"}
         },
+        "ccxt_async_config": {"enableRateLimit": true},
+        "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
+        "sandboxMode": true
+    },
+
         "ccxt_async_config": {
             "enableRateLimit": true
         },
