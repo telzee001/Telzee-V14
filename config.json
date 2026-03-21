@@ -5,6 +5,21 @@
     "dry_run": true,
     "trading_mode": "futures",
     "margin_mode": "isolated",
+    "can_short": true,
+    "entry_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": true,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
     "exchange": {
         "name": "binance",
         "key": "K4IGM01KrKHuTsJJcgUDJmflKnwOHOU8mlOG6P9ongxwUg3hDlZQ7xaT23T6J1QK",
@@ -18,13 +33,21 @@
             },
             "options": {"defaultType": "future"}
         },
-        "ccxt_async_config": {
-            "enableRateLimit": true
-        },
-        "pair_whitelist": [
-            "SOL/USDT:USDT",
-            "BTC/USDT:USDT"
-        ],
+        "ccxt_async_config": { "enableRateLimit": true },
+        "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
         "sandboxMode": true
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
+        "chat_id": "7082788269",
+        "notification_settings": {
+            "status": "on",
+            "buy": "on",
+            "sell": "on",
+            "short": "on",
+            "exit_short": "on",
+            "protection": "on"
+        }
     }
 }
