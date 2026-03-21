@@ -9,11 +9,7 @@
     "entry_pricing": {
         "price_side": "same",
         "use_order_book": true,
-        "order_book_top": 1,
-        "check_depth_of_market": {
-            "enabled": true,
-            "bids_to_ask_delta": 1
-        }
+        "order_book_top": 1
     },
     "exit_pricing": {
         "price_side": "same",
@@ -35,8 +31,14 @@
         },
         "ccxt_async_config": { "enableRateLimit": true },
         "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
+        "pair_blacklist": [],
         "sandboxMode": true
     },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
     "telegram": {
         "enabled": true,
         "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
@@ -46,8 +48,7 @@
             "buy": "on",
             "sell": "on",
             "short": "on",
-            "exit_short": "on",
-            "protection": "on"
+            "exit_short": "on"
         }
     }
 }
