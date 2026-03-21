@@ -2,7 +2,7 @@
     "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
-    "dry_run": false,
+    "dry_run": true,
     "trading_mode": "futures",
     "margin_mode": "isolated",
     "exchange": {
