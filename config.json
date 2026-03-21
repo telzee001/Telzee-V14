@@ -1,0 +1,40 @@
+{
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "dry_run": false,
+    "exchange": {
+        "name": "binance",
+        "key": "grgkPkhy2FbSLz1LTO8L9nHpujnOtj1QcJh9Pz0UYfa3ZJ9jNPIU27VLbqH9oD1X",
+        "secret": "i40IGRChggSXQUKfWosYY0PwIeYk3PwBAEP0fQQ8EqmExkTSJGjFOWlU1r460XHx",
+        "ccxt_config": {
+            "options": {
+                "defaultType": "future",
+                "sandboxMode": true
+            },
+            "proxies": {
+                "http": "http://185.162.229.154:10002",
+                "https": "http://185.162.229.154:10002"
+            }
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true
+        },
+        "urls": {
+            "api": {
+                "public": "https://testnet.binancefuture.com/fapi/v1",
+                "private": "https://testnet.binancefuture.com/fapi/v1"
+            }
+        }
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
+        "chat_id": "7082788269"
+    },
+    "pair_whitelist": [
+        "BTC/USDT:USDT",
+        "SOL/USDT:USDT",
+        "ETH/USDT:USDT"
+    ]
+}
