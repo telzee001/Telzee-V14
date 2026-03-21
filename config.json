@@ -3,7 +3,9 @@
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "dry_run": false,
-        "exchange": {
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "exchange": {
         "name": "binance",
         "key": "K4IGM01KrKHuTsJJcgUDJmflKnwOHOU8mlOG6P9ongxwUg3hDlZQ7xaT23T6J1QK",
         "secret": "51SsM6BPVxltBU4DGNF3PtQy2sY5Wotetvz3dcgSzFmZzMG8mM6pDb0na0DIUa7",
@@ -16,29 +18,13 @@
             },
             "options": {"defaultType": "future"}
         },
-        "ccxt_async_config": {"enableRateLimit": true},
-        "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
-        "sandboxMode": true
-    },
-
         "ccxt_async_config": {
             "enableRateLimit": true
         },
-        "urls": {
-            "api": {
-                "public": "https://testnet.binancefuture.com/fapi/v1",
-                "private": "https://testnet.binancefuture.com/fapi/v1"
-            }
-        }
-    },
-    "telegram": {
-        "enabled": true,
-        "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
-        "chat_id": "7082788269"
-    },
-    "pair_whitelist": [
-        "BTC/USDT:USDT",
-        "SOL/USDT:USDT",
-        "ETH/USDT:USDT"
-    ]
+        "pair_whitelist": [
+            "SOL/USDT:USDT",
+            "BTC/USDT:USDT"
+        ],
+        "sandboxMode": true
+    }
 }
