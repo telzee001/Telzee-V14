@@ -18,7 +18,7 @@
         },
         "ccxt_async_config": { "enableRateLimit": true },
         "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
-        "startup_candle_count": 250,
+        "startup_candle_count": 100,
         "sandboxMode": true
     },
     "pairlists": [{ "method": "StaticPairList" }],
@@ -33,9 +33,9 @@
         "listen_ip_address": "0.0.0.0",
         "listen_port": 8080,
         "verbosity": "error",
-        "jwt_secret_key": "somethingRandomSomethingRandom123",
+        "jwt_secret_key": "TelzeeQuantumV14AlphaKey",
         "username": "admin",
-        "password": "supersecretpassword123"
+        "password": "TelzeePassword2026"
     },
     "db_url": "sqlite:///tradesv3.dryrun.sqlite"
 }
