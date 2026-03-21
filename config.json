@@ -6,49 +6,27 @@
     "trading_mode": "futures",
     "margin_mode": "isolated",
     "can_short": true,
-    "entry_pricing": {
-        "price_side": "same",
-        "use_order_book": true,
-        "order_book_top": 1
-    },
-    "exit_pricing": {
-        "price_side": "same",
-        "use_order_book": true,
-        "order_book_top": 1
-    },
+    "entry_pricing": { "price_side": "same", "use_order_book": true, "order_book_top": 1 },
+    "exit_pricing": { "price_side": "same", "use_order_book": true, "order_book_top": 1 },
     "exchange": {
         "name": "binance",
         "key": "K4IGM01KrKHuTsJJcgUDJmflKnwOHOU8mlOG6P9ongxwUg3hDlZQ7xaT23T6J1QK",
         "secret": "51SsM6BPVxltBU4DGNF3PtQy2sY5Wotetvz3dcgSzFmZzMG8mM6pDb0na0DIUa7",
         "ccxt_config": {
-            "urls": {
-                "api": {
-                    "public": "https://testnet.binancefuture.com/fapi/v1",
-                    "private": "https://testnet.binancefuture.com/fapi/v1"
-                }
-            },
+            "urls": { "api": { "public": "https://testnet.binancefuture.com/fapi/v1", "private": "https://testnet.binancefuture.com/fapi/v1" } },
             "options": {"defaultType": "future"}
         },
         "ccxt_async_config": { "enableRateLimit": true },
         "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
-        "pair_blacklist": [],
+        "startup_candle_count": 250,
         "sandboxMode": true
     },
-    "pairlists": [
-        {
-            "method": "StaticPairList"
-        }
-    ],
+    "pairlists": [{ "method": "StaticPairList" }],
     "telegram": {
         "enabled": true,
         "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
         "chat_id": "7082788269",
-        "notification_settings": {
-            "status": "on",
-            "buy": "on",
-            "sell": "on",
-            "short": "on",
-            "exit_short": "on"
-        }
-    }
+        "notification_settings": { "status": "on", "buy": "on", "sell": "on", "short": "on", "exit_short": "on" }
+    },
+    "api_server": { "enabled": false }
 }
