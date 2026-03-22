@@ -2,27 +2,24 @@
     "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
-    "tradable_balance_ratio": 0.99,
     "dry_run": false,
     "trading_mode": "futures",
     "margin_mode": "isolated",
     "exchange": {
         "name": "binance",
         "sandbox": true,
-        "key": "PASTE_YOUR_DEMO_KEY_HERE",
-        "secret": "PASTE_YOUR_DEMO_SECRET_HERE",
+        "key": "${BINANCE_API_KEY}",
+        "secret": "${BINANCE_API_SECRET}",
         "pair_whitelist": [
             "BTC/USDT:USDT",
             "ETH/USDT:USDT",
             "SOL/USDT:USDT"
         ],
-        "ccxt_config": {"enableRateLimit": true},
-        "ccxt_async_config": {"enableRateLimit": true}
+        "ccxt_config": {"enableRateLimit": true}
     },
     "telegram": {
         "enabled": true,
         "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
         "chat_id": "7082788269"
-    },
-    "db_url": "sqlite:///tradesv3.futures_demo.sqlite"
+    }
 }
