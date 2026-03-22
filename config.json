@@ -2,35 +2,27 @@
     "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
-    "dry_run": true,
+    "tradable_balance_ratio": 0.99,
+    "dry_run": false,
     "trading_mode": "futures",
     "margin_mode": "isolated",
-    "can_short": true,
     "exchange": {
         "name": "binance",
-        "key": "K4IGM01KrKHuTsJJcgUDJmflKnwOHOU8mlOG6P9ongxwUg3hDlZQ7xaT23T6J1QK",
-        "secret": "51SsM6BPVxltBU4DGNF3PtQy2sY5Wotetvz3dcgSzFmZzMG8mM6pDb0na0DIUa7",
-        "ccxt_config": {
-            "urls": { "api": { "public": "https://testnet.binancefuture.com/fapi/v1", "private": "https://testnet.binancefuture.com/fapi/v1" } },
-            "options": {"defaultType": "future"}
-        },
-        "pair_whitelist": ["SOL/USDT:USDT", "BTC/USDT:USDT"],
-        "startup_candle_count": 100,
-        "sandboxMode": true
+        "sandbox": true,
+        "key": "YOUR_DEMO_KEY_HERE",
+        "secret": "YOUR_DEMO_SECRET_HERE",
+        "pair_whitelist": [
+            "BTC/USDT:USDT",
+            "ETH/USDT:USDT",
+            "SOL/USDT:USDT"
+        ],
+        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_async_config": {"enableRateLimit": true}
     },
-    "pairlists": [{"method": "StaticPairList"}],
     "telegram": {
         "enabled": true,
         "token": "8664443363:AAFqwYXryiml-_XLpL5s8F-YRrFYGUkSSIs",
-        "chat_id": "7082788269",
-        "notification_settings": {"status": "on", "buy": "on", "sell": "on"}
+        "chat_id": "7082788269"
     },
-    "api_server": {
-        "enabled": false,
-        "listen_ip_address": "0.0.0.0",
-        "listen_port": 8080,
-        "verbosity": "error",
-        "username": "admin",
-        "password": "TelzeePassword2026"
-    }
+    "db_url": "sqlite:///tradesv3.futures_demo.sqlite"
 }
