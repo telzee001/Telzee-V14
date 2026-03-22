@@ -9,8 +9,8 @@
     "exchange": {
         "name": "binance",
         "sandbox": true,
-        "key": "YOUR_DEMO_KEY_HERE",
-        "secret": "YOUR_DEMO_SECRET_HERE",
+        "key": "PASTE_YOUR_DEMO_KEY_HERE",
+        "secret": "PASTE_YOUR_DEMO_SECRET_HERE",
         "pair_whitelist": [
             "BTC/USDT:USDT",
             "ETH/USDT:USDT",
