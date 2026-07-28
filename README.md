@@ -1,0 +1,1 @@
+Well its so crazy that I want to build a python trading both with freqtrade even when I never knew coding or any software skills, But to my greatest surprise it became my foundation and first step into the software world and am yet to do more 
